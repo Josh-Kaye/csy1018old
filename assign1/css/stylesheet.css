@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*joshua kaye csy1018 (assign1) - stylesheet.css*/
 
   body{ /*this is the body of the hypertext doc // will be the perent of the chilldren within it*/
@@ -191,6 +192,143 @@
     margin-right: 2%;
     width: 10;
 }
+=======
+/*Joshua Kaye csy1018 (assign1) - Stylesheet.css*/
+
+body{ /*this is the body of the hypertext doc // will be the perent of the chilldren within it*/
+  display: flex;
+  flex-direction: column;/*displayng how we want the web page to be // this case a column so horzontial*/
+  min-height: -100vh; /*percentage vh=Vertical and Horozontal margins*/
+  margin: 0; /*Magin from top set to 0 */
+  font-family: sans-serif; /*Defult Page Text*/
+  color: #333;/*webpage body background*/
+}
+
+/*Navigation Starts*/
+/*navigation for larger screens*/
+.navigation{ /*navigation displaly*/
+  flex-flow: row wrap; /*this use the whole width of the parent*/
+  justify-content:center;
+  list-style: none; /*getting rid of list style*/
+  margin: 0; /*making the margin at top 0*/
+  background-color: #ffffff;
+  display: flex; /*defines what the container is = flex container*/
+  display:-moz-box; /*making sure firefox reads the container correctly*/
+  display: -ms-flexbox;/*making sure IE reads the container correctly*/
+  display: -webkit-flex;
+  -webkit-flex-flow:row wrap;
+  flex: 1 0 auto; /* making sure the extra space is factored in by using flex-basies 1 0 auto*/
+}
+
+.navigation a { /*editing the style of the nav links (a tags)*/
+  display: block; /*Display in block container*/
+  text-decoration: none; /*get rid of link underline*/
+  padding: 1em; /* spacing the elements by around 10px*/
+  margin: 0; /*Added a margin of 3 to make it match up with hover to prevent resizing*/
+  color: #232323; /*font colour in hex*/
+  font-family: 'ABeeZee', sans-serif; /*google font*/
+  border-top: 4px solid white;/*border-top: 6px solid white;/*Added an inviable elemeant to prevent moving or jittering*/
+  transition: 0.9s ease;
+  white-space: nowrap;
+}
+
+.navigation a:hover{ /* when <a> link is hovered over it will display this*/
+display: block;
+text-decoration: none;
+border-top: 4px solid #46c7ed;/*border will appear above link when hovered over // apperance solid line, with hex value color*/
+margin: 0;/*making the margin at top 0*/
+}
+/*Navigation ENDS!!*/
+
+.wrapper{ /*container / parent under .navigation for intro content (img, header, text)*/
+  display: flex;/**/
+  flex-direction: column;/*Saying to container that we want it to displayed in a column not a row*/
+  flex: 1 0 auto;/*Making the container whole width of the page*/
+  width: 100%;/*full width of set max-width*/
+  height: 575px;/*height of container*/
+  background-color: #46c7ed/*background of the container*/
+}
+
+.wrapper-content{
+  list-style: none;/*Setting a style of none for the list*/
+  margin: 0;/*marign of 0 to prevent any spacing*/
+  padding: 125px;/*padding from top of set pixels*/
+  display: -webkit-box;/*display the same in broswers*/
+  display: -moz-box;/*display the same in broswers (firefox)*/
+  display: -ms-flexbox;/*display the same in broswers (Internet Explorer)*/
+  display: -webkit-flex; /*display the container as a flexbox element in browsers*/
+  display: flex;/*display defualt as flex elemeant*/
+  -webkit-flex-flow: row wrap; /*applies to parent flex container element*/
+  justify-content: center;/*aligning content in the container to center of the given wit*/
+}
+
+.wrapper-item{
+   width: 200px;
+   height: 150px;
+   margin-top: 10px;
+   line-height: 150px;
+   /**/
+}
+
+.wrapper-image{
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  margin-top: -125px;
+}
+
+.wrapper-image-info{
+  width: 400px;
+  height: 400px;
+}
+
+/*END OF WRAPPER IMAGE*/
+.wrapper-text{
+  list-style: none;/*set the style of list to none*/
+}
+.wrapper-head,.div-text,h1{/*edited all these clases togther to make it easier to read*/
+  text-align: center;
+  justify-content: center;
+  padding-right: 25px;
+  display: block;
+  flex-direction: column;
+  color: white;
+  font-family: sans-serif; /*google font*/
+  font-weight: bold;
+  font-size: 1.4em; /*font size around 23px*/
+  margin-top: -225px;
+}
+
+.div-head-text{
+  text-align: center;
+  justify-content: center;
+  padding-right: 19px;
+  display: block;
+  flex-direction: column;
+  color: white;
+  font-family: sans-serif; /*google font*/
+  font-weight: bold;
+    font-size: 1.1em; /*font size around 18px*/
+
+}
+
+
+
+/*display sizes - @media content*/
+  /*for larger displays*/
+
+
+
+/*Page-content END!!*/
+/*for medium displays*/
+@media (max-width: 800px){
+  .navigation {
+    justify-content: space-around; /*Item equally distributed on a medium sized display by centering child content*/
+  }
+}
+
+/* for smaller displays */
+>>>>>>> 777cb0df1a9f95486bf795a532ce9bfa96f5ae29
 @media (max-width: 500px) {
   .navigation {
     /* We change from row to column on smaller displays*/
@@ -198,6 +336,12 @@
     text-align: center;
     justify-content: center;
   }
+<<<<<<< HEAD
+=======
+}
+
+@media (max-width: 500px) {
+>>>>>>> 777cb0df1a9f95486bf795a532ce9bfa96f5ae29
   .navigation a{
     margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
     border-right: 5px solid white;/*Added an inviable elemeant to prevent moving or jittering*/
@@ -210,6 +354,7 @@
     border-top: none;/*Switches off top border when width of device is above 500px*/
     border-right: 5px solid #46c7ed;/*Makes it so border is now at the side when screen is below 501px*/
   }
+<<<<<<< HEAD
   .container-items{
     display: flex;
     flex-wrap: wrap;
@@ -250,4 +395,6 @@
     display: flex;
     flex-flow: column;
   }
+=======
+>>>>>>> 777cb0df1a9f95486bf795a532ce9bfa96f5ae29
 }
