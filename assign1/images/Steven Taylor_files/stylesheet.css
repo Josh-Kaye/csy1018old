@@ -1,0 +1,26 @@
+/*stylesheet UTH-8*/
+
+body{ /*this is the body of the hypertext doc // will be the perent of the chilldren within it*/
+  display: flex;/*we want to body to have a display of flex, so flexbox cmd is used*/
+  flex-direction: column;/*displayng how we want the web page to be // this case a column so horzontial*/
+  min-height: -100vh; /*percentage vh=Vertical and Horozontal margins*/
+  margin: 0; /*Magin from top set to 0 */
+  color: #333;/*webpage body background*/
+}
+.nav-bar-st{
+  display: inline-block;
+  display:-moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.ul-nav-st{
+  border-bottom: 1px solid #ccc;
+ list-style: none;
+ margin: 0 0 1.5rem 0;
+ padding: 0;
+ display: inline-flex;
+}

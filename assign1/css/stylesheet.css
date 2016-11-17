@@ -1,140 +1,253 @@
-/*Joshua Kaye csy1018 (assign1) - Stylesheet.css*/
+/*joshua kaye csy1018 (assign1) - stylesheet.css*/
 
-body{ /*this is the body of the hypertext doc // will be the perent of the chilldren within it*/
-  display: flex;
-  flex-direction: column;/*displayng how we want the web page to be // this case a column so horzontial*/
-  min-height: -100vh; /*percentage vh=Vertical and Horozontal margins*/
-  margin: 0; /*Magin from top set to 0 */
-  font-family: sans-serif; /*Defult Page Text*/
-  color: #333;/*webpage body background*/
-}
-
-/*Navigation Starts*/
-/*navigation for larger screens*/
-.navigation{ /*navigation displaly*/
-  flex-flow: row wrap; /*this use the whole width of the parent*/
-  justify-content:center;
-  list-style: none; /*getting rid of list style*/
-  margin: 0; /*making the margin at top 0*/
-  background-color: #ffffff;
-  display: flex; /*defines what the container is = flex container*/
-  display:-moz-box; /*making sure firefox reads the container correctly*/
-  display: -ms-flexbox;/*making sure IE reads the container correctly*/
-  display: -webkit-flex;
-  -webkit-flex-flow:row wrap;
-  flex: 1 0 auto; /* making sure the extra space is factored in by using flex-basies 1 0 auto*/
-}
-
-.navigation a { /*editing the style of the nav links (a tags)*/
-  display: block; /*Display in block container*/
-  text-decoration: none; /*get rid of link underline*/
-  padding: 1em; /* spacing the elements by around 10px*/
-  color: #232323; /*font colour in hex*/
-  font-family: 'ABeeZee', sans-serif; /*google font*/
-}
-
-.navigation a:hover{ /* when <a> link is hovered over it will display this*/
-border-top: 6px solid #46c7ed;/*border will appear above link when hovered over // apperance solid line, with hex value color*/
-margin: 0;/*making the margin at top 0*/
-}
-/*Navigation ENDS!!*/
-
-.wrapper{ /*container / parent under .navigation for intro content (img, header, text)*/
-  display: flex;/**/
-  flex-direction: column;/*Saying to container that we want it to displayed in a column not a row*/
-  flex: 1 0 auto;/*Making the container whole width of the page*/
-  width: 100%;/*full width of set max-width*/
-  height: 575px;/*height of container*/
-  background-color: #46c7ed/*background of the container*/
-}
-
-.wrapper-content{
-  list-style: none;/*Setting a style of none for the list*/
-  margin: 0;/*marign of 0 to prevent any spacing*/
-  padding: 125px;/*padding from top of set pixels*/
-  display: -webkit-box;/*display the same in broswers*/
-  display: -moz-box;/*display the same in broswers (firefox)*/
-  display: -ms-flexbox;/*display the same in broswers (Internet Explorer)*/
-  display: -webkit-flex; /*display the container as a flexbox element in browsers*/
-  display: flex;/*display defualt as flex elemeant*/
-  -webkit-flex-flow: row wrap; /*applies to parent flex container element*/
-  justify-content: center;/*aligning content in the container to center of the given width*/
-}
-
-.wrapper-item{
-   width: 200px; /*width */
-   height: 150px;
-   margin-top: 10px;
-   line-height: 150px;
-   /**/
-}
-
-.wrapper-image{
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  margin-top: -125px;
-}
-
-.wrapper-image-info{
-  width: 400px;
-  height: 400px;
-}
-
-/*END OF WRAPPER IMAGE*/
-.wrapper-text{
-  list-style: none;/*set the style of list to none*/
-}
-.wrapper-head,.div-text,h1{
-  text-align: center;
-  justify-content: center;
-  padding-right: 19px;
-  display: block;
-  flex-direction: column;
-  color: white;
-  font-family: sans-serif; /*google font*/
-  font-weight: bold;
-  font-size: 1.4em; /*font size around 23px*/
-  margin-top: -200px;
-}
-
-.div-head-text{
-  text-align: center;
-  justify-content: center;
-  padding-right: 19px;
-  display: block;
-  flex-direction: column;
-  color: white;
-  font-family: sans-serif; /*google font*/
-  font-weight: bold;
-    font-size: 1.1em; /*font size around 18px*/
-
-}
-
-
-
-/*display sizes - @media content*/
-  /*for larger displays*/
-.navigation{
-display: flex;
-flex-flow: row wrap; /*this use the whole width of the parent*/
-justify-content:center;
-}
-
-
-
-/*Page-content END!!*/
-/*for medium displays*/
-@media (max-width: 800px){
-  .navigation {
-    justify-content: space-around; /*Item equally distributed on a medium sized display by centering child content*/
+  body{ /*this is the body of the hypertext doc // will be the perent of the chilldren within it*/
+    display: flex;/*we want to body to have a display of flex, so flexbox cmd is used*/
+    flex-direction: column;/*displayng how we want the web page to be // this case a column so horzontial*/
+    min-height: -100vh; /*percentage vh=Vertical and Horozontal margins*/
+    margin: 0; /*Magin from top set to 0 */
+    font-family: sans-serif; /*Defult Page Text*/
+    color: #333;/*webpage body background*/
   }
-}
+/*Navigation Starts!!*/
+/*navigation for larger screens*/
+  .navigation{ /*navigation displaly*/
+    flex-flow: row wrap; /*this use the whole width of the parent*/
+    justify-content:center;
+    flex: 1 0 auto; /* making sure the extra space is factored in by using flex-basies 1 0 auto*/
+    list-style: none; /*getting rid of list style*/
+    margin: 0; /*making the margin at top 0*/
+    background-color: #ffffff;
+    display: flex; /*defines what the container is = flex container*/
+    display:-moz-box; /*making sure firefox reads the container correctly*/
+    display: -ms-flexbox;/*making sure IE reads the container correctly*/
+    display: -webkit-flex;
+    -webkit-flex-flow:row wrap;
+  }
+  .navigation a { /*editing the style of the nav links (a tags)*/
+    display: block; /*Display in block container*/
+    text-decoration: none; /*get rid of link underline*/
+    padding: 1em; /* spacing the elements by around 10px*/
+    margin: 0; /*Added a margin of 3 to make it match up with hover to prevent resizing*/
+    color: #232323; /*font colour in hex*/
+    font-family: 'ABeeZee', sans-serif; /*google font*/
+    border-top: 4px solid white;/*border-top: 6px solid white;/*Added an inviable elemeant to prevent moving or jittering*/
+    transition: 0.9s ease;/*making the transition between this and hover fade. So basically an animation without the use of java*/
+    white-space: nowrap;/*We want to make sure the content does not wrap onto another line*/
+  }
+  .navigation a:hover{ /* when <a> link is hovered over it will display this*/
+    display: block;/*making sure the .nav is displyed as a block, I could have used block-inline*/
+    text-decoration: none;/*making it so the text has no decoration, so underline ect.*/
+    border-top: 4px solid #46c7ed;/*border will appear above link when hovered over // apperance solid line, with hex value color*/
+    margin: 0;/*making the margin at top 0*/
+  }
+/*Navigation ENDS!!*/
+  .container-one-jk{ /*container / parent under .navigation for intro content (img, header, text)*/
+    display: flex;/*disply is flex*/
+    flex-direction: column;/*Saying to container that we want it to displayed in a column not a row*/
+    flex: 1 0 auto;/*Making the container whole width of the page*/
+    display: -moz-flex;/*display the same in broswers (firefox)*/
+    display: -ms-flexbox;/*display the same in broswers (Internet Explorer)*/
+    display: -webkit-flex; /*display the container as a flexbox element in browsers*/
+    width: 100%;/*full width of set §*/
+    height: 650px;/*height of container*/
+    background-color: #46c7ed;/*background of the container*/
+  }
+  .continer-one-image{/*The .img within the container*/
+    align-self: center;
+    width: 400px; /*width of the image*/
+    height: 400px;/*height of the image*/
+  }
+  .container-items{
+    align-items: center;
+    list-style: none;/*Setting a style of none for the list*/
+    margin: 0;/*marign of 0 to prevent any spacing*/
+    padding: 125px;/*padding from top of set pixels*/
+  }
+  .text-cone{ /*Article within head wrapper*/
+    margin-top: -250px;
+    align-self: center;
+    text-align: center;
+    color: #f1f1f1;
+  }
+  .container-two-jk{/*conatiner for 3  items*/
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+  }
+  .main-wrapper{
+    display:flex;
+    margin: 5%;
+    margin-top: 7.5%;
+    width: 100%;
+    height: 100%;
+  }
+  .article-left{/*article-left*/
+    flex-grow: 1;
+    margin-right: 2%;
+    width: 33%;
+    background-color: #d4d4d4;
+  }
+  .education-heading{
+    color: #161616;
+    font-size: 2em;
+    margin-left: 8%;
+  }
+  .map-locations-div{/*map content*/
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+  }
+  .map-text{
+    font-family: 'ABeeZee', sans-serif;
+    color: #161616;
+    font-size: 1.5em;
+    order: 2;
+    align-self: center;
+  }
+  .map-locations{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    order: 1;
+    width: 600px;
+    height: 450px;
+    frameborder: 0;
+    border:0;
+  }/*map content end!*/
 
-/* for smaller displays */
+  .ul-eduction-uni{/*Uni list start*/
+    list-style: none;
+  }
+  .li-eduction-uni{
+    font-family: 'ABeeZee', sans-serif;
+    color: #161616;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+  .p-uni{
+    color: #464646;
+    margin-top: 2%;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1em;
+    width: 90%;
+  }/*Uni list end*/
+
+  .ul-eduction-college{/*College list start*/
+    list-style: none;
+  }
+  .li-eduction-college{
+    font-family: 'ABeeZee', sans-serif;
+    color: #161616;
+    font-size: 1.5em;
+    font-weight: bolder;
+    transition: 0.9s;
+  }
+  .p-college{
+    color: #464646;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1em;
+    width: 90%;
+  }/*College list end*/
+  .ul-eduction-school{/*School list start*/
+    list-style: none;
+  }
+  .li-eduction-school{
+    font-family: 'ABeeZee', sans-serif;
+    color: #161616;
+    font-size: 1.5em;
+    font-weight: bolder;
+    transition: 0.9s;
+  }
+  .p-school{
+    color: #464646;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1em;
+    width: 90%;
+  }/*School list end*/
+
+  .article-middle{
+    flex-grow: 1;
+    width: 33%;
+    margin-right: 2%;
+    background-color: #ededed;
+  }
+  .work-experiance-heading{
+    margin-left: 8%;
+    font-size: 2em;
+    margin-right: 2%;
+    width: 10%;
+  }
+  .article-right{
+    flex-grow: 1;
+    width: 33%;
+    background-color: #8c8e8f;
+}
+  .skills-heading{
+    margin-left: 8%;
+    font-size: 2em;
+    margin-right: 2%;
+    width: 10;
+}
 @media (max-width: 500px) {
   .navigation {
     /* We change from row to column on smaller displays*/
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .navigation a{
+    margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
+    border-right: 5px solid white;/*Added an inviable elemeant to prevent moving or jittering*/
+    border-top: none;
+  }
+  .navigation a:hover{
+    /* We change from row to column on smaller displays*/
+    flex-direction: column;
+    margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
+    border-top: none;/*Switches off top border when width of device is above 500px*/
+    border-right: 5px solid #46c7ed;/*Makes it so border is now at the side when screen is below 501px*/
+  }
+  .container-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-items: center;
+    width: 375px;
+    margin-top:45px;
+    margin-left: -120px;
+  }
+  .container-two-jk{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    font-size: 0.7em;
+    max-width: 400px;
+    align-content: center;
+    margin-top: 100px;
+  }
+  .continer-one-image{
+    margin-top: -60px;
+    width: 95%;
+    align-self: center;
+  }
+  .text-cone{
+    align-self: center;
+    width: 95%;
+    height: 100%;
+  }
+  .main-wrapper{
+    margin-top: -32px;
+    display: flex;
+    flex-flow: column;
+  }
+  .article-left{
+    margin-top: -20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
   }
 }
