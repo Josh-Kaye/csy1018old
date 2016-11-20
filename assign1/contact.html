@@ -11,20 +11,43 @@
   </head>
   <body>
 
-     <ul class ="navigation"> <!--navigation start !-->
-      <li><a href="#">Home</a></li> <!--li = list content !-->
+     <ul class ="navigation">
+      <li><a href="cv.html">Home</a></li>
       <li><a href="bio.html">Bio</a></li>
-      <li><a href="#">Contact</a></li>  <!--a = link and content !-->
+      <li><a href="#">Contact</a></li>
       <li><a href="#">About</a></li>
     </ul>
-    <div class="container-one-jk">
-      <img class="continer-one-image" src="/Volumes/NO NAME/csy1018/assign1/css/stylesheet.css" alt="">
-      <ul class="container-items">
-            <li class="text-cone"><h1>Joshua Kaye</h1><h3>Web design and Developer</h3><article class="wrapper-article">
-            My name is Josh Kaye I’m a friendly, self motivated individual that always aims to achieve the best possible standards at anything thrown my way in life. I’ve had experience in working in both a team environment and as an individual. I’m a very practical oriented person who easily picks up on anything, my main strengths are more technology based but I’m also an extremely polite person who has had many years of experience in customer service. Organisation is a must have of mine, it applies to everything in my life like my art work and is a massive part in my everyday life.
-            Please have a look around my website, at my previous work and my genral background.
-            I hope you enjoy and it gives you an idea of my personality.</article></li>
+   <div class="contianer-contact-form">
+    <div class="wrapper-contact-form">
+      <form class="contact-form" action="mailto:jkayee3@gmail.com" method="post" enctype="text/plain">
+        <ul class="ul-wrapper-outer">
+          <li class="li-form-subject">
+            <label type="subject">Subject</label>
+              <input type="subject" id="subject"
+          <li class="li-wrapper-outer">
+            <label for="name">Name</label>
+              <input type="text" id="enter-fname" name="name" placeholder="enter your name here">
+          </li>
+        <li class="li-form-email">
+          <label for="email">Email</label>
+            <input type="email" id="enter-email" name="email" placeholder="Enter your email here!">
+        </li>
+        <li class="li-form-phone">
+          <label for="phone">Phone</label>
+            <input type="tel" id="enter-phone" name="phone" placeholder="Enter your phone number">
+        </li>
+        <li class="li-form-text-area">
+          <label for="message">Message here</label>
+            <textarea rows="10" id="message" name="message" placeholder="Enter message here">
+            </textarea>
+        </li>
+        <li class="li-form-button">
+          <button class="button-send" type="submit">Submit</button>
+          <button class="button-rest" type="reset">Reset</button>
+        </li>
       </ul>
+     </form>
     </div>
+   </div>
   </body>
 </html>

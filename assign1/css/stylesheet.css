@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*joshua kaye csy1018 (assign1) - stylesheet.css*/
 
   body{ /*this is the body of the hypertext doc // will be the perent of the chilldren within it*/
@@ -115,7 +114,6 @@
     order: 1;
     width: 600px;
     height: 450px;
-    frameborder: 0;
     border:0;
   }/*map content end!*/
 
@@ -192,7 +190,6 @@
     margin-right: 2%;
     width: 10;
 }
-=======
 /*Joshua Kaye csy1018 (assign1) - Stylesheet.css*/
 
 body{ /*this is the body of the hypertext doc // will be the perent of the chilldren within it*/
@@ -311,14 +308,8 @@ margin: 0;/*making the margin at top 0*/
     font-size: 1.1em; /*font size around 18px*/
 
 }
-
-
-
 /*display sizes - @media content*/
   /*for larger displays*/
-
-
-
 /*Page-content END!!*/
 /*for medium displays*/
 @media (max-width: 800px){
@@ -328,7 +319,6 @@ margin: 0;/*making the margin at top 0*/
 }
 
 /* for smaller displays */
->>>>>>> 777cb0df1a9f95486bf795a532ce9bfa96f5ae29
 @media (max-width: 500px) {
   .navigation {
     /* We change from row to column on smaller displays*/
@@ -336,12 +326,9 @@ margin: 0;/*making the margin at top 0*/
     text-align: center;
     justify-content: center;
   }
-<<<<<<< HEAD
-=======
 }
 
 @media (max-width: 500px) {
->>>>>>> 777cb0df1a9f95486bf795a532ce9bfa96f5ae29
   .navigation a{
     margin: 0;/*Added a margin of 5 to make it match up with hover to prevent resizing*/
     border-right: 5px solid white;/*Added an inviable elemeant to prevent moving or jittering*/
@@ -354,7 +341,6 @@ margin: 0;/*making the margin at top 0*/
     border-top: none;/*Switches off top border when width of device is above 500px*/
     border-right: 5px solid #46c7ed;/*Makes it so border is now at the side when screen is below 501px*/
   }
-<<<<<<< HEAD
   .container-items{
     display: flex;
     flex-wrap: wrap;
@@ -395,3 +381,4 @@ margin: 0;/*making the margin at top 0*/
     display: flex;
     flex-flow: column;
   }
+}
